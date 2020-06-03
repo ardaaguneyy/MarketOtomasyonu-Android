@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddItemactivity"
+    android:background="@color/backgroundcolor">
+
+    <EditText
+        android:id="@+id/addnametext"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="121dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:hint="Ürün Adı"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/addpricetext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/addpricetext"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:hint="Fiyat"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/itemnumberaddtext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addnametext" />
+
+    <Button
+        android:id="@+id/additembutton"
+        android:layout_width="142dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="89dp"
+        android:onClick="additemonclick"
+        android:text="ÜRÜNÜ EKLE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemnumberaddtext" />
+
+    <EditText
+        android:id="@+id/itemnumberaddtext"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="51dp"
+        android:ems="10"
+        android:hint="Ürün adeti"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/additembutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addpricetext" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
